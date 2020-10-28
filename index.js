@@ -69,16 +69,13 @@ const Game = () => {
       stepNumber: history.length,
         xIsNext: !state.xIsNext,
       });
-       console.log(history)
     }
     
   const jumpTo = (step) => {
-      console.log('Yes')
       setState({
         stepNumber:step,
         xIsNext: (step % 2) === 0,
       });
-      console.log(step)
     }
 
     
